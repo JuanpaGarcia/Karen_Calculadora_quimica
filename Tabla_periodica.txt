@@ -25,4 +25,46 @@ Cr Cromo 24 +2,+3,+6 51.9961
 Mn Manganeso 25 +2,+3,+4,+7
 Fe Hierro 26 +2,+3 55.845
 Co Cobalto 27 +2,+3 58.993
-
+Ni Niquel 28 +2,+3 58.6934
+Cu Cobre 29 +1,+2 63.546
+Zn Zinc 30 +2 65.38
+Ga Galio 31 +3 69.723
+Ge germanio 32 +2,+4,72.630
+As Arsenico 33 -3,+3,+5 74.921
+Se Selenio 34 -2,+4,+6 78.971
+Br Bromo 35 -1,+1,+5 79.901
+Kr Kripton 36 0(Gas_noble) 83.798
+Rb Rubidio 37 +1 85.4678
+Sr Estroncio 38 +2 87.62
+Y Itirio 39 +3 88.905
+Zr Circonio 40 +4 91.224
+Nb Niobio 41 +3,+5 92.906
+Mo Molibdeno 42 +6 95.95
+Tc Tecnecio 43 +4,+6,+7 -
+Ru Rutenio 44 +3 101.07
+Rh Rodio 45 +3 102.905
+Pd Paladio 46 +2,+3 106.42
+Ag Plata 47 +1 107.8682
+Cd Cadmio 48 +2 112.414
+In Indio 49 +3 114.818
+Sn Estaño 50 +2,+4 118.710
+Sb Antimonio 51 -3,+3,+5
+Te Telurio 52 -2,+4,+6 127.60
+I Yodo 53 -1,+1,+5,+7 126.904
+Xe Xeon 54 0(Gas_noble) 131.293
+Cs Cesio 55 +1 132.905
+Ba Bario 56 +2 137.327
+La Lantano 57 +3 138.905
+Ce Cerio 58 +3,+4 140.116
+Pr Praseodimio 59 +3 140.907
+Nd Neodimio 60 +3 144.242
+Pm Prometio 61 +3 -
+Sm 62 +2,+3 150.36
+Eu Europio 63 +2,+3 1151.964
+Gd Gadolinio 64 +3 157.25
+Tb Terbio 65 +3 158.925
+Dy Disprosio 66 +3 162.500
+Ho Holmio 67 +3 164.930
+Er Erbio 68 +3 167.259
+Tm Tulio 69 +3 168.934
+Yb Iterbio 70 +2,+3 173.054
