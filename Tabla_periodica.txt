@@ -1,0 +1,28 @@
+H Hidrogeno 1 -1,+1 1.007
+He Helio 2 0(Gas_Noble) 4.002
+Li Litio 3 -2,+1 1.007
+Be Berilio 4 +2 9.012
+B Boro 5 +3 10.806
+C Carbono 6 -4,+2,+4 12.0096
+N Nitrogeno 7 -3,-2,-1,+1,+2,+3,+4,+5 14.006
+O Oxigeno 8 -2 15.999
+F Fluor 9 -1 18.98
+Ne Neon 10 0(Gas_Noble) 20.1797
+Na Sodio 11 +1 22.989
+Mg Magnesio 12 +2 24.304
+Al Aluminio 13 +3 26.981
+Si Silicio 14 -4,+2,+4 28.084
+P Fosforo 15 -3,+3,+5 30.973
+S Azufre 16 -2,+4,+6 32.059
+Cl Cloro 17 -1,+1,+5,+7 35.446
+Ar Argon 18 0(Gas_Noble) 39.948
+K Potasio 19 +1 39.0983
+Ca Calcio 20 +2 40.078
+Sc Escandio 21 +3 44.955
+Ti Titanio 22 +2,+3,+4 47.867
+V Vanadio 23 +2,+3,+4,+5 50.9415
+Cr Cromo 24 +2,+3,+6 51.9961
+Mn Manganeso 25 +2,+3,+4,+7
+Fe Hierro 26 +2,+3 55.845
+Co Cobalto 27 +2,+3 58.993
+

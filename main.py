@@ -71,6 +71,22 @@ def calcular_conversion_temp():
         print(temperatura_a_convertir,"grados Kelvin es equivalente a",conversion_kelvin(2,temperatura_a_convertir), "grados Farenheit")
 
 
+def leer_tabla():
+    root = 'C:/Users/garci/Desktop/Karen_calculadora/Tabla_periodica.txt'
+    tabla = open(root, 'r')
+    cant_elementos_tabla: int = 103
+    str:  str = (input("Introduce el elemento a buscar: \n"))
+    for i in range (cant_elementos_tabla):
+        elemento_t = tabla.readline()
+        tipo = elemento_t.split()
+        if str == tipo[0]:
+            print("Abreviatura:",tipo[0],"Nombre:", tipo[1],"Numero atomico",tipo[2],"Valencias",tipo[3],"Masa atomica",tipo[4])
+            break
+
+
+    tabla.close()
+
+
 #Cargar variables de menu
 
 m_molar: int = 1
@@ -91,6 +107,8 @@ while True:
 
     elif opcion == tabla_p:
         print("Opcion consultar tabla periodica")
+        #elemento = str(input("Introduce la opcicion a escoger: \n"))
+        leer_tabla()
 
     elif opcion == conversion:
         print("Opcion para conversion de temperatura")
