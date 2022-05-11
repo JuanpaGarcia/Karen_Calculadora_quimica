@@ -76,7 +76,7 @@ Re Renio 75 +4,+6,+7 186.207
 Os Osmio 76 +3,+4 190.23
 Ir Iridio 77 +3,+4 192.217
 Pt Platino 78 +2,+4 195.084
-Au Oro 79 +1,+3
+Au Oro 79 +1,+3 196.966
 Hg Mercurio 80 +1,+2 200.592
 Tl Talio 81 +1,+3 204.382
 Pb 82 +2,+4 207.200

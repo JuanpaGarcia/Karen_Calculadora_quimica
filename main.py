@@ -3,12 +3,6 @@
 # Press Mayús+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
 def print_menu_opciones():
     print("Proyecto de programacion y algotitmos\n")
     print("Calculadora química\n\n")
@@ -71,20 +65,30 @@ def calcular_conversion_temp():
         print(temperatura_a_convertir,"grados Kelvin es equivalente a",conversion_kelvin(2,temperatura_a_convertir), "grados Farenheit")
 
 
-def leer_tabla():
+def leer_tabla(str):
     root = 'C:/Users/garci/Desktop/Karen_calculadora/Tabla_periodica.txt'
     tabla = open(root, 'r')
     cant_elementos_tabla: int = 103
-    str:  str = (input("Introduce el elemento a buscar: \n"))
-    for i in range (cant_elementos_tabla):
+    for i in range(cant_elementos_tabla):
         elemento_t = tabla.readline()
         tipo = elemento_t.split()
         if str == tipo[0]:
-            print("Abreviatura:",tipo[0],"Nombre:", tipo[1],"Numero atomico",tipo[2],"Valencias",tipo[3],"Masa atomica",tipo[4])
             break
-
-
+    return tipo
     tabla.close()
+
+def calcular_masa():
+    elemento_1 = (input("Introduce el elemento a buscar 1: \n"))
+    sub_1 = int(input("Introduce el subindice1: \n"))
+    elemento_2 = (input("Introduce el elemento a buscar 2: \n"))
+    sub_2 = int(input("Introduce el subindice2: \n"))
+    dato_elem_1 = leer_tabla(elemento_1)
+    masa1 = float(dato_elem_1[4])
+    print("Masa atomica elemento 1",masa1)
+    dato_elem_2 = leer_tabla(elemento_2)
+    masa2 = float(dato_elem_2[4])
+    print("Masa atomica elemento 1", masa2)
+    print("Masa total molar",(masa1*sub_1 + masa2*sub_2))
 
 
 #Cargar variables de menu
@@ -101,6 +105,7 @@ opcion = int(input("Introduce la opcicion a escoger: \n"))
 while True:
     if opcion == m_molar:
         print("Opcion masa molar")
+        calcular_masa()
 
     elif opcion == ley_gas:
         print("Opcion ley de gases")
@@ -108,7 +113,9 @@ while True:
     elif opcion == tabla_p:
         print("Opcion consultar tabla periodica")
         #elemento = str(input("Introduce la opcicion a escoger: \n"))
-        leer_tabla()
+        str: str = (input("Introduce el elemento a buscar: \n"))
+        tipo = leer_tabla(str)
+        print("Abreviatura:", tipo[0], "Nombre:", tipo[1], "Numero atomico", tipo[2], "Valencias", tipo[3], "Masa atomica", tipo[4])
 
     elif opcion == conversion:
         print("Opcion para conversion de temperatura")
