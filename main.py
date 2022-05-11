@@ -3,12 +3,17 @@
 # Press Mayús+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
+
+from chempy import balance_stoichiometry
+from numpy.core.defchararray import upper
+
+
 def print_menu_opciones():
     print("Proyecto de programacion y algotitmos\n")
     print("Calculadora química\n\n")
     print("\tMenu de opciones:")
     print("\t\t1)\tCalculadora de masa molar\n")
-    print("\t\t2)\tCalculadora de ley de gases\n")
+    print("\t\t2)\tCalculadora de balanceo\n")
     print("\t\t3)\tConsulta de elemento de tabla periodica\n")
     print("\t\t4)\tCalculadora de conversiones\n")
     print("\t\t5)\tTerminar programa\n")
@@ -84,17 +89,26 @@ def calcular_masa():
     sub_2 = int(input("Introduce el subindice2: \n"))
     dato_elem_1 = leer_tabla(elemento_1)
     masa1 = float(dato_elem_1[4])
-    print("Masa atomica elemento 1",masa1)
+    print("Masa atomica elemento 1", masa1)
     dato_elem_2 = leer_tabla(elemento_2)
     masa2 = float(dato_elem_2[4])
     print("Masa atomica elemento 1", masa2)
-    print("Masa total molar",(masa1*sub_1 + masa2*sub_2))
+    print("Masa total molar", (masa1*sub_1 + masa2*sub_2))
+
+def calcular_balanceo():
+    elemento_1 = (input("Introduce el elemento 1 a sumar: \n"))
+    elemento_2 = (input("Introduce el elemento 2 a sumar: \n"))
+    resultado_suma = (input("el resultado de la suma: \n"))
+    reactivos, productos = balance_stoichiometry({elemento_1, elemento_2}, {resultado_suma})
+    print(reactivos, productos)
+
+
 
 
 #Cargar variables de menu
 
 m_molar: int = 1
-ley_gas: int = 2
+balanceo: int = 2
 tabla_p: int = 3
 conversion: int = 4
 terminar: int = 5
@@ -107,8 +121,9 @@ while True:
         print("Opcion masa molar")
         calcular_masa()
 
-    elif opcion == ley_gas:
+    elif opcion == balanceo:
         print("Opcion ley de gases")
+        calcular_balanceo()
 
     elif opcion == tabla_p:
         print("Opcion consultar tabla periodica")
